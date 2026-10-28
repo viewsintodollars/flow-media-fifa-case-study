@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>FIFA World Cup 2026 · Case Study</title>
+<meta name="description" content="Flow Media was the production partner on Unite8 Sports' FIFA World Cup 2026 Instagram coverage: 96.1M views in 45 days.">
+<meta property="og:title" content="FIFA World Cup 2026 · 96.1M views in 45 days">
+<meta property="og:description" content="A short case study. Flow Media was the production partner on Unite8 Sports' World Cup coverage on Instagram.">
+<meta property="og:image" content="https://viewsintodollars.github.io/flow-media-fifa-case-study/assets/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/r-ronaldo.webp">
+<style>
+:root{
+  --acc:#C43AFF; --acc-ink:#8A1FC0; --tint:#F6ECFF;
+  --ink:#181A1F; --grey:#5B5E66; --soft:#8A8D94;
+  --line:#E7E4EA; --surf:#F7F6F8; --bg:#FFFFFF;
+  --pad:clamp(20px,4.5vw,64px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-snap-type:y proximity;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:'Poppins',system-ui,-apple-system,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+
+/* ---------- frame ---------- */
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--acc);z-index:20;transition:width .35s cubic-bezier(.2,.8,.2,1)}
+.slide{min-height:100vh;min-height:100svh;scroll-snap-align:start;display:flex;flex-direction:column;
+  padding:calc(var(--pad) * .6) var(--pad) calc(var(--pad) * .55);position:relative;border-bottom:1px solid var(--line)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:clamp(20px,4vh,44px)}
+.lockup{display:flex;align-items:center;gap:12px;height:26px}
+.lockup img{height:100%;width:auto}
+.lockup .sep{width:1px;height:70%;background:var(--line)}
+.num{font-size:12px;color:var(--soft);letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.body{flex:1;display:flex;flex-direction:column;justify-content:center;max-width:1180px;width:100%;margin:0 auto}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--acc-ink);margin-bottom:10px}
+h1,h2{font-weight:700;letter-spacing:-.03em;line-height:1.08}
+h2{font-size:clamp(28px,4.2vw,48px);margin-bottom:clamp(18px,3.5vh,34px);max-width:22ch}
+.em{color:var(--acc)}
+p{color:var(--grey);font-size:clamp(15px,1.25vw,17px)}
+p strong{color:var(--ink);font-weight:600}
+.foot{font-size:12px;color:var(--soft);margin-top:clamp(16px,3vh,28px)}
+
+/* ---------- cover ---------- */
+.cover .body{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(24px,5vw,72px);align-items:center}
+.cover h1{font-size:clamp(46px,7.4vw,104px)}
+.cover h1 .big{color:var(--acc);display:block}
+.cover .lede{margin-top:22px;max-width:40ch;font-size:clamp(15px,1.4vw,19px)}
+.role{display:inline-flex;align-items:center;gap:10px;margin-top:26px;padding:10px 16px;border-radius:999px;background:var(--tint);color:var(--acc-ink);font-weight:600;font-size:14px}
+.role::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--acc)}
+.for{text-align:right}
+.for small{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--soft)}
+.for b{font-size:clamp(15px,1.5vw,20px)}
+.posters{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.posters img{border-radius:14px;box-shadow:0 1px 2px rgba(60,20,90,.06),0 18px 40px -18px rgba(60,20,90,.35)}
+.posters img:last-child{margin-top:48px}
+
+/* ---------- shared blocks ---------- */
+.two{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,4.5vw,64px);align-items:start}
+.list{list-style:none;display:grid;gap:14px;margin-top:4px}
+.list li{display:grid;grid-template-columns:22px 1fr;gap:8px;color:var(--grey);font-size:clamp(15px,1.2vw,16.5px)}
+.list li::before{content:"✓";color:var(--acc);font-weight:700}
+.list b{color:var(--ink);font-weight:600}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.split div{padding:16px 18px;border-radius:12px;background:var(--surf)}
+.split div.us{background:var(--tint)}
+.split small{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-bottom:4px}
+.split .us small{color:var(--acc-ink)}
+.split span{font-size:14.5px;font-weight:600;line-height:1.4;display:block}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tile{border:1px solid var(--line);border-radius:14px;padding:clamp(14px,1.6vw,22px)}
+.tile b{display:block;font-size:clamp(26px,3.4vw,46px);font-weight:700;letter-spacing:-.03em;line-height:1.05;color:var(--acc)}
+.tile span{display:block;margin-top:6px;font-size:13.5px;color:var(--grey);line-height:1.35}
+.tile.hero{background:var(--acc);border-color:var(--acc)}
+.tile.hero b,.tile.hero span{color:#fff}
+.tiles.sm{grid-template-columns:1fr 1fr;margin-top:18px}
+.tiles.sm .tile b{font-size:clamp(24px,2.6vw,34px)}
+.chart{margin-top:clamp(18px,3vh,30px);border:1px solid var(--line);border-radius:14px;padding:clamp(12px,1.6vw,20px)}
+.chart small,.label{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-bottom:10px}
+.profile{border:1px solid var(--line);border-radius:14px;padding:10px;margin-bottom:12px}
+
+/* table */
+table{width:100%;border-collapse:collapse;font-size:clamp(14px,1.2vw,16px)}
+th{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);text-align:left;padding:0 8px 10px 0;border-bottom:1px solid var(--line)}
+td{padding:14px 8px 14px 0;border-bottom:1px solid var(--line);color:var(--grey)}
+td:first-child{color:var(--ink);font-weight:600}
+td.x{color:var(--acc);font-weight:700;font-size:1.15em}
+td.r{color:var(--ink);font-weight:600}
+
+/* reels strip */
+.reels{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.4vw,18px)}
+.reel img{border-radius:12px;box-shadow:0 14px 30px -18px rgba(60,20,90,.4)}
+.reel b{display:block;margin-top:10px;font-size:clamp(18px,1.8vw,24px);color:var(--acc);letter-spacing:-.02em}
+.reel span{display:block;font-size:13px;color:var(--grey);line-height:1.35}
+
+/* rows */
+.rows{display:grid;gap:0}
+.row{display:grid;grid-template-columns:52px 1fr;gap:6px;padding:16px 0;border-top:1px solid var(--line)}
+.row:first-child{border-top:0;padding-top:0}
+.row i{font-style:normal;font-weight:700;font-size:22px;color:var(--acc);line-height:1.2}
+.row h3{font-size:clamp(16px,1.45vw,19px);font-weight:600;letter-spacing:-.01em;margin-bottom:2px}
+.row p{font-size:clamp(14px,1.15vw,15.5px)}
+.stack{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stack img{border-radius:12px}
+.stack figcaption{font-size:12.5px;color:var(--soft);margin-top:6px;line-height:1.35}
+
+/* close */
+.close{background:var(--tint)}
+.close h2{font-size:clamp(34px,5.6vw,72px);max-width:14ch}
+.close .lede{max-width:46ch;font-size:clamp(15px,1.4vw,18px)}
+.people{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:clamp(22px,4vh,40px);max-width:760px}
+.person{background:#fff;border-radius:14px;padding:18px 20px;border-left:3px solid var(--acc)}
+.person b{display:block;font-size:17px}
+.person small{display:block;color:var(--soft);font-size:13px;margin-bottom:10px}
+.person a{display:block;font-size:14.5px;text-decoration:none;padding:3px 0;transition:color .2s ease}
+.person a:hover,.person a:focus-visible{color:var(--acc-ink);text-decoration:underline}
+.person a:active{opacity:.7}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:4px}
+
+/* desktop nav */
+.nav{position:fixed;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;z-index:20}
+.nav a{width:9px;height:9px;border-radius:50%;background:var(--line);transition:transform .25s cubic-bezier(.3,1.4,.5,1),background-color .2s}
+.nav a.on{background:var(--acc);transform:scale(1.35)}
+.nav a:hover{background:var(--soft)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
+.in .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ---------- phones / narrow ---------- */
+@media (max-width:820px){
+  html{scroll-snap-type:none}
+  .slide{min-height:auto;padding-top:22px;padding-bottom:40px}
+  .slide.cover{min-height:100svh}
+  .nav{display:none}
+  .lockup{height:20px;gap:9px}
+  .top{margin-bottom:26px}
+  .cover .body,.two{grid-template-columns:1fr}
+  .cover .body{gap:30px}
+  .for{display:none}
+  .for-m{display:block!important;margin-bottom:14px}
+  .posters img:last-child{margin-top:28px}
+  .tiles{grid-template-columns:1fr 1fr}
+  .reels{grid-template-columns:1fr 1fr;gap:14px}
+  .split,.people{grid-template-columns:1fr}
+  .stack{max-width:420px}
+  table{font-size:14px}
+  th:nth-child(4),td:nth-child(4){text-align:right}
+}
+@media (min-width:821px) and (max-height:700px){
+  .slide{padding-top:20px;padding-bottom:20px}
+  h2{margin-bottom:14px}
+}
+</style>
+</head>
+<body>
+<div id="bar" aria-hidden="true"></div>
+<nav class="nav" aria-label="Slides"></nav>
+
+<!-- 1 Cover -->
+<section class="slide cover" id="s1" aria-label="Cover">
+  <div class="top">
+    <div class="lockup"><img src="assets/flow-dark.png" alt="Flow Media"><span class="sep"></span><img src="assets/vid.png" alt="Views Into Dollars"><img src="assets/bbm.png" alt="Brands Benchmark"></div>
+    <div class="for"><small>PREPARED FOR</small><b>Nitin Tewari</b></div>
+  </div>
+  <div class="body">
+    <div>
+      <div class="kicker for-m" style="display:none">Prepared for Nitin Tewari</div>
+      <div class="kicker">Case study · FIFA World Cup 2026</div>
+      <h1><span class="big">96.1M views</span>in 45 days.</h1>
+      <p class="lede">Unite8 Sports covered the FIFA World Cup 2026 on Instagram for fans in India. <strong>Flow Media was the production partner</strong>, handling post-production on the coverage from the first match to the final.</p>
+      <div class="role">Our role: production partner</div>
+    </div>
+    <div class="posters">
+      <img src="assets/r-ronaldo.webp" width="540" height="833" alt="Reel: Ronaldo, end of an era, 951K views" fetchpriority="high">
+      <img src="assets/r-messi.webp" width="536" height="846" alt="Reel: Messi celebration, 430K views">
+    </div>
+  </div>
+  <div class="foot">Flow Media · Views Into Dollars · Brands Benchmark</div>
+</section>
+
+<!-- 2 Our role -->
+<section class="slide" id="s2" aria-label="Our role">
+  <div class="top"><div class="lockup"><img src="assets/flow-dark.png" alt="Flow Media"><span class="sep"></span><img src="assets/vid.png" alt="Views Into Dollars"><img src="assets/bbm.png" alt="Brands Benchmark"></div><span class="num">02 / 07</span></div>
+  <div class="body">
+    <div class="kicker">01 · Our role</div>
+    <h2>We were the <span class="em">production partner</span>.</h2>
+    <div class="two">
+      <div class="rv">
+        <p>Unite8 Sports ran World Cup coverage on Instagram for Indian fans, alongside the live stream on ZEE5. The page had to stay live through every matchday for 45 days, not just the big fixtures.</p>
+        <ul class="list" style="margin-top:18px">
+          <li><span><b>Post-production for the full tournament</b>, 1 June to 19 July 2026</span></li>
+          <li><span><b>Match moments turned around on matchdays</b>, while the conversation was still live</span></li>
+          <li><span><b>Reaction cuts, trend edits and memes</b>, made for Instagram rather than lifted from TV</span></li>
+          <li><span><b>Edited for an Indian audience</b>: local references, local humour</span></li>
+        </ul>
+        <div class="split">
+          <div><small>Unite8 Sports and their agency</small><span>Page, strategy and publishing</span></div>
+          <div class="us"><small>Flow Media</small><span>Post-production: the edits behind the coverage</span></div>
+        </div>
+      </div>
+      <div class="rv">
+        <img class="profile" src="assets/profile.webp" width="900" height="255" alt="Unite8 Sports Instagram profile, 79.4K followers" loading="lazy">
+        <div class="tiles sm">
+          <div class="tile"><b>45</b><span>days of coverage</span></div>
+          <div class="tile"><b>1,320</b><span>posts published</span></div>
+          <div class="tile"><b>~25</b><span>posts a day</span></div>
+          <div class="tile"><b>669</b><span>reels</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 Results -->
+<section class="slide" id="s3" aria-label="Results">
+  <div class="top"><div class="lockup"><img src="assets/flow-dark.png" alt="Flow Media"><span class="sep"></span><img src="assets/vid.png" alt="Views Into Dollars"><img src="assets/bbm.png" alt="Brands Benchmark"></div><span class="num">03 / 07</span></div>
+  <div class="body">
+    <div class="kicker">02 · Results</div>
+    <h2>96.1M views, <span class="em">1.29M a day</span>, for 45 days straight.</h2>
+    <div class="tiles rv">
+      <div class="tile hero"><b>96.1M</b><span>Total views</span></div>
+      <div class="tile"><b>5.02M</b><span>Accounts engaged</span></div>
+      <div class="tile"><b>79.4K</b><span>Followers gained</span></div>
+      <div class="tile"><b>1.29M</b><span>Average views a day</span></div>
+    </div>
+    <div class="chart rv">
+      <small>Daily views and follows, 1 June to 19 July</small>
+      <img src="assets/chart-daily.webp" width="1024" height="240" alt="Daily views chart, steady across the tournament" loading="lazy">
+    </div>
+    <p class="foot">No single match carried the numbers. Reach held steady across the whole tournament. Figures: Unite8 Sports Instagram, from the client's performance report.</p>
+  </div>
+</section>
+
+<!-- 4 Reels -->
+<section class="slide" id="s4" aria-label="Reels">
+  <div class="top"><div class="lockup"><img src="assets/flow-dark.png" alt="Flow Media"><span class="sep"></span><img src="assets/vid.png" alt="Views Into Dollars"><img src="assets/bbm.png" alt="Brands Benchmark"></div><span class="num">04 / 07</span></div>
+  <div class="body">
+    <div class="kicker">03 · Where the views came from</div>
+    <h2>Half the posts were reels. They brought in <span class="em">74.6M of the 96.1M views</span>.</h2>
+    <div class="two">
+      <div class="rv">
+        <table>
+          <thead><tr><th>Per post</th><th>Statics</th><th>Reels</th><th>Gap</th></tr></thead>
+          <tbody>
+            <tr><td>Average reach</td><td>6.7K</td><td class="r">90.6K</td><td class="x">13.4x</td></tr>
+            <tr><td>Engagement rate</td><td>4.41%</td><td class="r">9.57%</td><td class="x">2.2x</td></tr>
+            <tr><td>Total views</td><td>7.31M</td><td class="r">74.6M</td><td class="x">10.2x</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="rv">
+        <span class="label">What people did with the reels</span>
+        <div class="tiles sm" style="margin-top:0">
+          <div class="tile"><b>910.7K</b><span>shares</span></div>
+          <div class="tile"><b>138K</b><span>saves</span></div>
+          <div class="tile"><b>4.73M</b><span>likes</span></div>
+          <div class="tile"><b>26.9K</b><span>comments</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="foot">Almost a million shares means fans were sending the edits on, which is how the page kept reaching people who didn't follow it.</p>
+  </div>
+</section>
+
+<!-- 5 Top reels -->
+<section class="slide" id="s5" aria-label="Top reels">
+  <div class="top"><div class="lockup"><img src="assets/flow-dark.png" alt="Flow Media"><span class="sep"></span><img src="assets/vid.png" alt="Views Into Dollars"><img src="assets/bbm.png" alt="Brands Benchmark"></div><span class="num">05 / 07</span></div>
+  <div class="body">
+    <div class="kicker">04 · Top reels</div>
+    <h2>Emotion beat <span class="em">information</span>.</h2>
+    <div class="reels rv">
+      <figure class="reel"><img src="assets/r-ronaldo.webp" width="540" height="833" alt="Ronaldo reel" loading="lazy"><b>951K</b><span>Ronaldo, end of an era</span></figure>
+      <figure class="reel"><img src="assets/r-messi.webp" width="536" height="846" alt="Messi reel" loading="lazy"><b>430K</b><span>Messi celebrates</span></figure>
+      <figure class="reel"><img src="assets/r-messi-tears.webp" width="540" height="838" alt="Messi emotional reel" loading="lazy"><b>248K</b><span>Messi, the emotion after the whistle</span></figure>
+      <figure class="reel"><img src="assets/r-spain.webp" width="540" height="838" alt="Spain celebration reel" loading="lazy"><b>188K</b><span>Spain, the celebration</span></figure>
+    </div>
+    <p class="foot">Celebrations, tears and player reactions beat scorecards and fixture posts every time. The football was the context. The emotion is why people watched and shared.</p>
+  </div>
+</section>
+
+<!-- 6 What made it work -->
+<section class="slide" id="s6" aria-label="What made it work">
+  <div class="top"><div class="lockup"><img src="assets/flow-dark.png" alt="Flow Media"><span class="sep"></span><img src="assets/vid.png" alt="Views Into Dollars"><img src="assets/bbm.png" alt="Brands Benchmark"></div><span class="num">06 / 07</span></div>
+  <div class="body">
+    <div class="kicker">05 · What made the edits work</div>
+    <h2>Cut for Instagram, <span class="em">cut for India</span>.</h2>
+    <div class="two">
+      <div class="rows rv">
+        <div class="row"><i>01</i><div><h3>Feeling first</h3><p>We opened on the reaction, the tears, the celebration. The scoreline came second.</p></div></div>
+        <div class="row"><i>02</i><div><h3>Native, not a TV replay</h3><p>Fast cuts, reaction edits, memes and trend formats. Edits made for the feed did better than broadcast clips.</p></div></div>
+        <div class="row"><i>03</i><div><h3>Made in India, for India</h3><p>Familiar faces like Sandesh Jhingan, local humour, Indian internet references. A global event, cut for the people watching it here.</p></div></div>
+        <div class="row"><i>04</i><div><h3>A system, not a lucky post</h3><p>Around 25 posts a day kept every matchday live. The growth came from the process, not one viral spike.</p></div></div>
+      </div>
+      <div class="stack rv">
+        <figure><img src="assets/r-jhingan.webp" width="534" height="830" alt="Reel with Sandesh Jhingan" loading="lazy"><figcaption>Local face, global event</figcaption></figure>
+        <figure><img src="assets/r-trend.webp" width="538" height="836" alt="Trend edit reel" loading="lazy"><figcaption>Trend format, matchday story</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 Close -->
+<section class="slide close" id="s7" aria-label="Contact">
+  <div class="top"><div class="lockup"><img src="assets/flow-dark.png" alt="Flow Media"><span class="sep" style="background:#E2CDF2"></span><img src="assets/vid.png" alt="Views Into Dollars"><img src="assets/bbm.png" alt="Brands Benchmark"></div><span class="num">07 / 07</span></div>
+  <div class="body">
+    <div class="kicker">Next</div>
+    <h2>Your new show, <span class="em">cut the same way</span>.</h2>
+    <p class="lede">Same team you worked with on your last show. We can take your episodes through post-production and turn them into short-form cuts built for Instagram.</p>
+    <div class="people">
+      <div class="person"><b>Vishwajeet Mungase</b><small>Founder, Flow Media</small><a href="https://wa.me/919766294555">WhatsApp +91 97662 94555</a><a href="mailto:vishwajeet@flow-media.in">vishwajeet@flow-media.in</a></div>
+      <div class="person"><b>Jayesh Sinha</b><small>Founder, Views Into Dollars</small><a href="https://wa.me/919112137827">WhatsApp +91 91121 37827</a><a href="mailto:jayesh@viewsintodollars.com">jayesh@viewsintodollars.com</a></div>
+    </div>
+  </div>
+  <div class="foot">Flow Media · Views Into Dollars · Brands Benchmark</div>
+</section>
+
+<script>
+(()=>{
+  const S=[...document.querySelectorAll('.slide')],bar=document.getElementById('bar'),nav=document.querySelector('.nav');
+  S.forEach((s,i)=>{const a=document.createElement('a');a.href='#'+s.id;a.setAttribute('aria-label','Slide '+(i+1));nav.appendChild(a)});
+  const dots=[...nav.children];let cur=0;
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');
+    if(e.intersectionRatio>=.5||innerWidth<=820){cur=S.indexOf(e.target);dots.forEach((d,i)=>d.classList.toggle('on',i===cur));bar.style.width=((cur+1)/S.length*100)+'%'}}}),{threshold:[.15,.5]});
+  S.forEach(s=>io.observe(s));S[0].classList.add('in');
+  addEventListener('keydown',e=>{const k=e.key;let n=null;
+    if(['ArrowDown','ArrowRight','PageDown',' '].includes(k))n=Math.min(cur+1,S.length-1);
+    if(['ArrowUp','ArrowLeft','PageUp'].includes(k))n=Math.max(cur-1,0);
+    if(n!==null){e.preventDefault();S[n].scrollIntoView({behavior:'smooth'})}});
+})();
+</script>
+</body>
+</html>
